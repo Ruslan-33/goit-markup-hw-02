@@ -110,3 +110,32 @@ body {
 }
 
 /* ROW STYLES */
+.link {
+}
+.project-card {
+}
+.card-title {
+  font-size: 20px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  flex: none;
+}
+.cadr-text {
+  color: var(--slate, #434455);
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+/* FOOTER */
+.footer-bg {
+  background-color: var(--navyblue, #2e2f42);
+}
+
+.footer-text {
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+}
