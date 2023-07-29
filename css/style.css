@@ -3,41 +3,43 @@
   --white: #fff;
   --navyblue: #2e2f42;
   --cloud: #f4f4fd;
+  --slate: #434455;
+  --ocean: #404bbf;
 }
 /* BASE STYLES */
 body {
   font-family: Roboto, sans-serif;
-  color: #434455;
   font-style: normal;
   font-size: 16px;
   background-color: var(--white, #fff);
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .link {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   text-decoration: none;
+  color: var(--slate);
 }
 
-.list {
-  list-style: none;
-}
+/* LOGO */
 
 .header-logo {
   font-family: 'Raleway', sans-serif;
-  color: var(--iris, #4d5ae5);
-  font-size: 18px;
   font-weight: 800;
+  font-size: 18px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  color: --iris;
 }
 
 .header-logo-dark {
-  color: var(--navyblue, #2e2f42);
+  color: --navyblue;
 }
 
 .header-logo-white {
-  color: var(--cloud, #f4f4fd);
+  color: --cloud;
 }
 
 .pages-list,
@@ -47,69 +49,111 @@ body {
 }
 
 .pages-list-item {
-  color: var(--navyblue, #2e2f42);
+  color: --navyblue;
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
 
-/* FILTERS STYLES */
-
-.filters {
-  display: inline-flex;
-  align-items: flex-start;
-  gap: 24px;
+.pages-list-item:hover,
+.pages-list-item:focus {
+  color: var(--ocean);
 }
 
-.filter-title {
-  display: none;
-}
+/*  */
 
-.filter-list {
-  list-style-type: none;
-}
-
-.filter-list-item {
-  border-radius: 4px;
-}
-
-.filters-button {
-  border-radius: 4px;
-  border: 1px solid var(--cornflower, #e7e9fc);
-  background-color: var(--cloud, #f4f4fd);
-  color: var(--iris, #4d5ae5);
-  display: flex;
-  padding: 12px 24px;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
+.pages-list-item-link {
+  font-weight: 500;
   font-size: 16px;
-  margin: 4px 2px;
-  transition-duration: 0.4s;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--navyblue);
+}
+
+.header-address {
+  font-style: normal;
+}
+
+.header-address-list {
+  font-size: 16px
+  line-height: 1.5
+  letter-spacing: 0.02em
+  color: var(--slate)
+}
+
+.header-address-list-item:hover,
+.header-address-list-item:focus {
+  color: #404bbf;
+}
+
+.pages-list-item-link,
+link:hover,
+.pages-list-item-link,
+link:focus {
+  color: var(--iris);
+}
+
+.section-hero {
+  background-color: var(--navyblue);
+}
+
+.section-hero-title {
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--white);
+}
+
+.section-hero-button {
+  background-color: var(--iris);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--white);
+}
+
+.section-hero-button:hover,
+.section-hero-button:focus {
+  background-color: var(--ocean);
   cursor: pointer;
 }
 
-.filters-button:hover,
-.filters-button:hover {
-  background-color: #404bbf;
-  color: white;
+.list {
+  list-style: none;
 }
 
-/* ROW STYLES */
-
-.card-title {
+.section-principles-title {
+  font-weight: 500;
   font-size: 20px;
-  line-height: 1.25;
+  line-height: 1.2;
   letter-spacing: 0.02em;
-  color: #2e2f42;
-  flex: none;
+  color: var(--navyblue);
 }
-.cadr-text {
-  color: var(--slate, #434455);
-  font-weight: 400;
+
+.section-principles-title-text {
+  font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  color: var(--slate);
+}
+
+.section-what-title {
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--navyblue);
+}
+
+.section-team {
+  background-color: var(--cloud);
+}
+
+.section-team-card {
+  background-color: var(--white);
 }
 
 /* FOOTER */
@@ -122,4 +166,44 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+}
+
+/* FILTERS STYLES */
+
+.filter-list {
+  list-style-type: none;
+}
+
+.filters-button {
+  background-color: --cloud;
+  color: --iris;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.filters-button:hover,
+.filters-button:focus {
+  background-color: var(--ocean);
+  color: var(--white);
+}
+
+/* ROW STYLES */
+
+.card-title {
+  font-size: 20px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: var(--navyblue);
+  flex: none;
+}
+.cadr-text {
+  color: --slate;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }

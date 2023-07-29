@@ -18,79 +18,90 @@
     <header>
       <!-- Favicon -->
       <nav>
-        <a class="link header-logo" href="./index.html"
+        <a class="header-logo link" href="./index.html"
           >Web<span class="header-logo-dark">Studio</span></a
         >
         <!-- PAGES -->
-        <ul class="pages-list">
+        <ul class="pages-list list">
           <li class="pages-list-item">
-            <a class="link" href="./index.html">Studio</a>
+            <a class="pages-list-item-link link" href="./index.html">Studio</a>
           </li>
           <li class="pages-list-item">
-            <a class="link" href="./portfolio.html">Portfolio</a>
+            <a class="pages-list-item-link link" href="./portfolio.html"
+              >Portfolio</a
+            >
           </li>
-          <li class="pages-list-item"><a class="link" href="">Contacts</a></li>
+          <li class="pages-list-item">
+            <a class="pages-list-item-link link" href="">Contacts</a>
+          </li>
         </ul>
       </nav>
 
       <!-- Address -->
-      <address class="">
-        <ul>
-          <li class="list">
-            <a class="link" href="mailto:info@devstudio.com"
+      <address class="header-address">
+        <ul class="list">
+          <li class="header-address-list">
+            <a
+              class="header-address-list-item link"
+              href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
           </li>
-          <li class="list">
-            <a class="link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+          <li class="header-address-list">
+            <a class="header-address-list-item link" href="tel:+110001111111"
+              >+11 (000) 111-11-11</a
+            >
           </li>
         </ul>
       </address>
     </header>
 
     <main>
-      <section>
-        <h1>Effective Solutions for Your Business</h1>
-        <button type="button">Order Service</button>
+      <!-- SECTION-1 HERO -->
+      <section class="section-hero">
+        <h1 class="section-hero-title">
+          Effective Solutions for Your Business
+        </h1>
+        <button class="section-hero-button" type="button">Order Service</button>
       </section>
 
-      <section>
-        <h2>Our principles</h2>
-        <ul>
+      <section class="section-principles">
+        <h2 hidden>Our principles</h2>
+        <ul class="list">
           <li>
-            <h3>Strategy</h3>
-            <p>
+            <h3 class="section-principles-title">Strategy</h3>
+            <p class="section-principles-title-text">
               Our goal is to identify the business problem to walk away with the
               perfect and creative solution.
             </p>
           </li>
           <li>
-            <h3>Punctuality</h3>
-            <p>
+            <h3 class="section-principles-title">Punctuality</h3>
+            <p class="section-principles-title-text">
               Bring the key message to the brand's audience for the best price
               within the shortest possible time.
             </p>
           </li>
           <li>
-            <h3>Diligence</h3>
-            <p>
+            <h3 class="section-principles-title">Diligence</h3>
+            <p class="section-principles-title-text">
               Research and confirm brands that present the strongest digital
               growth opportunities and minimize risk.
             </p>
           </li>
           <li>
-            <h3>Technologies</h3>
-            <p>
+            <h3 class="section-principles-title">Technologies</h3>
+            <p class="section-principles-title-text">
               Design practice focused on digital experiences. We bring forth a
               deep passion for problem-solving.
             </p>
           </li>
         </ul>
       </section>
-
-      <section>
-        <h2>What are we doing</h2>
-        <ul>
+      <!-- SECTION-2 WHAT -->
+      <section class="what">
+        <h2 class="section-what-title">What are we doing</h2>
+        <ul class="list">
           <li><img src="./images/img1.jpg" alt="imac" width="360" /></li>
           <li><img src="./images/img2.jpg" alt="iphone" width="360" /></li>
           <li>
@@ -98,41 +109,41 @@
           </li>
         </ul>
       </section>
-
-      <section>
-        <h2>Our Team</h2>
-        <ul>
-          <li>
+      <!-- SECTION-3 TEAM -->
+      <section class="section-team">
+        <h2 class="section-what-title">Our Team</h2>
+        <ul class="list">
+          <li class="section-team-card">
             <img
               src="./images/photo1.jpg"
               alt="photo1 Product Designer"
               width="264"
             />
-            <h3>Mark Guerrero</h3>
-            <p>Product Designer</p>
+            <h3 class="section-principles-title">Mark Guerrero</h3>
+            <p class="section-principles-title-text">Product Designer</p>
           </li>
-          <li>
+          <li class="section-team-card">
             <img
               src="./images/photo2.jpg"
               alt="photo2 Frontend Developer"
               width="264"
             />
-            <h3>Tom Ford</h3>
-            <p>Frontend Developer</p>
+            <h3 class="section-principles-title">Tom Ford</h3>
+            <p class="section-principles-title-text">Frontend Developer</p>
           </li>
-          <li>
+          <li class="section-team-card">
             <img src="./images/photo3.jpg" alt="photo3 Marketing" width="264" />
-            <h3>Camila Garcia</h3>
-            <p>Marketing</p>
+            <h3 class="section-principles-title">Camila Garcia</h3>
+            <p class="section-principles-title-text">Marketing</p>
           </li>
-          <li>
+          <li class="section-team-card">
             <img
               src="./images/photo4.jpg"
               alt="photo4 UI Designer"
               width="264"
             />
-            <h3>Daniel Wilson</h3>
-            <p>UI Designer</p>
+            <h3 class="section-principles-title">Daniel Wilson</h3>
+            <p class="section-principles-title-text">UI Designer</p>
           </li>
         </ul>
       </section>
