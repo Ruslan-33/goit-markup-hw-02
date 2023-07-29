@@ -6,8 +6,7 @@ body {
   color: #434455;
   font-style: normal;
   font-size: 16px;
-  border-bottom: 1px solid var(--cornflower, #e7e9fc);
-  background: var(--white, #fff);
+  background-color: var(--white, #fff);
   font-weight: 500;
 }
 
@@ -35,7 +34,7 @@ body {
 }
 
 .header-logo-white {
-  color: #f4f4fd;
+  color: var(--cloud, #f4f4fd);
 }
 
 .pages-list,
