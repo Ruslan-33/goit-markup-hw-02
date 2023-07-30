@@ -31,15 +31,15 @@ body {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: --iris;
+  color: var(--iris);
 }
 
 .header-logo-dark {
-  color: --navyblue;
+  color: var(--navyblue);
 }
 
 .header-logo-white {
-  color: --cloud;
+  color: var(--cloud);
 }
 
 .pages-list,
@@ -74,10 +74,10 @@ body {
 }
 
 .header-address-list {
-  font-size: 16px
-  line-height: 1.5
-  letter-spacing: 0.02em
-  color: var(--slate)
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--slate);
 }
 
 .header-address-list-item:hover,
@@ -175,14 +175,11 @@ link:focus {
 }
 
 .filters-button {
-  background-color: --cloud;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
   color: --iris;
-  justify-content: center;
-  text-align: center;
-  text-decoration: none;
-  font-size: 16px;
-  margin: 4px 2px;
-  transition-duration: 0.4s;
+  background-color: --cloud;
   cursor: pointer;
 }
 
@@ -194,13 +191,6 @@ link:focus {
 
 /* ROW STYLES */
 
-.card-title {
-  font-size: 20px;
-  line-height: 1.25;
-  letter-spacing: 0.02em;
-  color: var(--navyblue);
-  flex: none;
-}
 .cadr-text {
   color: --slate;
   font-weight: 400;
