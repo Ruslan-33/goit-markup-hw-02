@@ -11,7 +11,7 @@ body {
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-size: 16px;
-  background-color: var(--white, #fff);
+  background-color: var(--white);
   font-weight: 400;
 }
 
@@ -49,7 +49,7 @@ body {
 }
 
 .pages-list-item {
-  color: --navyblue;
+  color: var(--navyblue);
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
@@ -82,7 +82,7 @@ body {
 
 .header-address-list-item:hover,
 .header-address-list-item:focus {
-  color: #404bbf;
+  color: var(--ocean);
 }
 
 .pages-list-item-link,
@@ -165,7 +165,7 @@ link:focus {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #f4f4fd;
+  color: var(--cloud);
 }
 
 /* FILTERS STYLES */
@@ -175,11 +175,13 @@ link:focus {
 }
 
 .filters-button {
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
+  font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  color: --iris;
-  background-color: --cloud;
+  color: var(--iris);
+  background-color: var(--cloud);
   cursor: pointer;
 }
 
