@@ -43,6 +43,14 @@ body {
   color: var(--cloud);
 }
 
+.nav-link {
+  color: var(--navyblue);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02;
+}
+
 .pages-list,
 .list {
   list-style-type: none;
@@ -67,7 +75,6 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--navyblue);
 }
 
 .pages-list-item-link:hover,
@@ -96,14 +103,6 @@ link:hover,
 .pages-list-item-link,
 link:focus {
   color: var(--iris);
-}
-
-.nav-link {
-  color: var(--navyblue);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02;
 }
 
 .section-hero {
